@@ -1,3 +1,3 @@
 # Airflow-AWS-Example
-Airflow is aws wireless aireflow named as WMAA.
+This Airflow is aws managed service named as WMAA service.
 This example is about how to use airflow to work with glue and emr.

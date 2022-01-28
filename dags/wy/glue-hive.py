@@ -69,7 +69,7 @@ with DAG(
         schedule_interval=None,
         tags=['pyspark'],
 ) as dag:
-    # glue etl job is added in glue console
+    # glue etl job is added in glue console before this dag
     # here just trigger the glue etl job to run
     # the key is job_name
     glue_job_step = AwsGlueJobOperator(
@@ -82,7 +82,7 @@ with DAG(
         aws_conn_id='aws_default',
         dag=dag
     )
-    # the glue crawler is added in glue console
+    # the glue crawler is added in glue console before this dag
     # here , just trigger the craler to run
     # the key is Name
     glue_crawler_job_step = AwsGlueCrawlerOperator(

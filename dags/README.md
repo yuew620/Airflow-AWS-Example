@@ -15,7 +15,7 @@ Airflow的User与IMA的User是一一对应的。在IAM的policy中可以对Airfl
 
 5、在IAM中，去掉用户的Airflow的Admin等权限，只留下viewer权限。具体配置如下
 
-{
+`{
 "Version": "2012-10-17",
 "Statement": [
 {
@@ -61,4 +61,6 @@ Airflow的User与IMA的User是一一对应的。在IAM的policy中可以对Airfl
 ]
 }
 ]
-}
+}`
+
+
